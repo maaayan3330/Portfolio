@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import { Outlet, Link } from "react-router-dom"
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-blue-600">
-      Hello Portfolio!
-    </h1>
+    <div>
+      <nav className="bg-gray-800 text-white p-4 flex gap-6">
+        <Link to="/" className="hover:text-blue-400">Home</Link>
+        <Link to="/projects" className="hover:text-blue-400">Projects</Link>
+        <Link to="/about" className="hover:text-blue-400">About Me</Link>
+        <Link to="/skills" className="hover:text-blue-400">Skills</Link>
+      </nav>
+      <main>
+        <Outlet />
+      </main>
+    </div>
   )
 }
-
 
 export default App
