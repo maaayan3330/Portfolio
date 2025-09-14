@@ -1,18 +1,19 @@
-
-import { Outlet, Link } from "react-router-dom"
+import { Outlet } from "react-router-dom"
+import Sidebar from "./Sidebar"
 
 function App() {
   return (
-    <div>
-      <nav className="bg-gray-800 text-white p-4 flex gap-6">
-        <Link to="/" className="hover:text-blue-400">Home</Link>
-        <Link to="/projects" className="hover:text-blue-400">Projects</Link>
-        <Link to="/about" className="hover:text-blue-400">About Me</Link>
-        <Link to="/skills" className="hover:text-blue-400">Skills</Link>
-      </nav>
-      <main>
+    <div className="flex">
+      {/* Sidebar בצד שמאל */}
+      <Sidebar />
+
+      {/* אזור התוכן - רקע הארי פוטר */}
+      <div 
+        className="flex-1 h-screen bg-cover bg-center" 
+        style={{ backgroundImage: "url('/harrypotter.jpg')" }}
+      >
         <Outlet />
-      </main>
+      </div>
     </div>
   )
 }
