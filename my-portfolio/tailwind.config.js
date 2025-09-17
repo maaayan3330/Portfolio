@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -6,8 +5,8 @@ export default {
   ],
   theme: {
     extend: {
-       fontFamily: {
-        harry: ["Cinzel Decorative", "serif"],
+      fontFamily: {
+        harry: ["HarryP", "serif"], // תמיד להוסיף fallback
       },
     },
   },

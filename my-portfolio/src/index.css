@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-body {
-  cursor: url('/harray-cursor.png') 16 16, auto;
-}
 
 /* אנימציית הסניץ */
 @keyframes snitch-rotate {
@@ -17,4 +14,11 @@ body {
   50%  { transform: translateY(0px); }
   75%  { transform: translateY(10px); }
   100% { transform: translateY(0px); }
+}
+
+@font-face {
+  font-family: "HarryP";
+  src: url("/fonts/HARRYP__.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
