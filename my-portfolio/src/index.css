@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+body {
+  cursor: url('/harray-cursor.png') 16 16, auto;
+}
 
 /* אנימציית הסניץ */
 @keyframes snitch-rotate {
