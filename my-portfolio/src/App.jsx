@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom"
-import Sidebar from "./Sidebar"
-import Snitch from "./Snitch"
+import Sidebar from "./components/Sidebar"
+import Snitch from "./components/Snitch"
 
 function App() {
   return (

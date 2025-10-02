@@ -1,8 +1,23 @@
 @import "tailwindcss";
 
+/* רישום קובץ הפונט – נשאר כמו שיש לך */
+@font-face {
+  font-family: "HarryP";
+  src: url("/fonts/harryp.ttf") format("truetype"); /* public/fonts/harryp.ttf */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* הגדרה ל-Tailwind v4 כדי ש- font-harry יעבוד */
+@theme {
+  --font-harry: "HarryP", serif;
+}
+
 body {
   cursor: url('/harray-cursor.png') 16 16, auto;
 }
+
 
 /* אנימציית הסניץ */
 @keyframes snitch-rotate {
@@ -19,9 +34,3 @@ body {
   100% { transform: translateY(0px); }
 }
 
-@font-face {
-  font-family: "HarryP";
-  src: url("/fonts/HARRYP__.TTF") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
