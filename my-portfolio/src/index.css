@@ -18,6 +18,10 @@ body {
   cursor: url('/harray-cursor.png') 16 16, auto;
 }
 
+@layer base {
+  html, body, #root { height: 100dvh; overflow: hidden; }
+  body { margin: 0; } /* מבטל מרווח ברירת־מחדל שיוצר פס גלילה */
+}
 
 /* אנימציית הסניץ */
 @keyframes snitch-rotate {
