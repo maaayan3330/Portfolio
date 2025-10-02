@@ -1,27 +1,17 @@
 import { useState } from "react";
 import FootstepsOverlay from "../components/FootstepsOverlay";
 
-
-function MagicScroll({ title = "About Me", children }) {
+function MagicScroll({ children }) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="min-h-[calc(100dvh-0px)] flex items-start md:items-center justify-center px-6 py-8">
-      <div className="w-full max-w-4xl">
-        {/* כותרת + כפתור */}
-        <div className="flex items-center gap-4 mb-6">
-          <h1 className="font-harry text-5xl text-yellow-400 drop-shadow-[0_0_10px_rgba(255,215,0,0.35)]">
-            {title}
-          </h1>
-          <button
-            onClick={() => setOpen((v) => !v)}
-            className="ml-2 rounded-xl px-4 py-2 bg-yellow-500/20 text-black-300 hover:bg-yellow-500/30 transition"
-            aria-expanded={open}
-            aria-controls="scroll-panel"
-          >
-            {open ? "Close" : "Open"}
-          </button>
-        </div>
+      <div className="w-full max-w-4xl text-center">
+        
+        {/* ✨ כותרת קסם */}
+        <h1 className="font-harry text-4xl text-yellow-400 mb-6 drop-shadow-[0_0_8px_rgba(255,215,0,0.5)]">
+          {open ? "Mischief Managed." : "I solemnly swear that I am up to no good."}
+        </h1>
 
         {/* מגילה */}
         <div
@@ -38,40 +28,44 @@ function MagicScroll({ title = "About Me", children }) {
           aria-label="Magic parchment"
         >
           {/* תוכן המגילה */}
-          <div className="relative px-6 md:px-10 py-5 md:py-8 text-stone-900 scroll-text">
-            {children}
-          </div>
+          {open && (
+            <div className="relative px-6 md:px-10 py-5 md:py-8 text-stone-900 scroll-text text-left">
+              <ul className="list-disc list-inside space-y-3 text-lg leading-relaxed">
+                <li>
+                  I am Maayan Ifergan, a Computer Science student at Bar-Ilan University and a Harry Potter enthusiast.
+                </li>
+                <li>
+                  I am a highly creative person with excellent communication and teamwork skills.
+                </li>
+                <li>
+                  I am always eager to learn new things, grow, and give my best to ensure outstanding results.
+                </li>
+                <li>
+                  I am looking for my first position in the development world — since all the jobs at Hogwarts were already taken!
+                </li>
+                <li>
+                  All the projects I’ve worked on and my skills are detailed on this site.
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
 
-        <p className="mt-3 text-sm text-black-200/80 italic">
-          Click “Open” to unroll the parchment — like the Weasley twins would
-        </p>
+        {/* כפתור פתיחה/סגירה */}
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className="mt-6 rounded-xl px-6 py-2 bg-yellow-500/20 text-black-300 hover:bg-yellow-500/30 transition"
+        >
+          {open ? "Close" : "Open"}
+        </button>
       </div>
 
-      {/* ✨ כאן מוסיפים את הטביעות – רק בעמוד הזה */}
+      {/* ✨ טביעות רגליים רק כאן */}
       <FootstepsOverlay />
     </div>
   );
 }
 
 export default function About() {
-  return (
-    <MagicScroll title="About Me">
-      <p className="mb-4 text-lg leading-relaxed">
-        I’m a CS student passionate about software development, problem solving,
-        and building cool stuff. I enjoy React, Python and back-end work,
-        and I love learning by creating fun projects.
-      </p>
-
-      <p className="mb-4 text-lg leading-relaxed">
-        Recently I’ve been focusing on clean UI, small animations, and turning
-        ideas into working apps. My goal is to join a team where I can learn fast,
-        contribute, and ship features that make people smile.
-      </p>
-
-      <p className="text-lg leading-relaxed">
-        Beyond code: coffee, puzzles, and a bit of Quidditch 🧹.
-      </p>
-    </MagicScroll>
-  );
+  return <MagicScroll />;
 }
