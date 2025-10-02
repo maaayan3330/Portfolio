@@ -1,4 +1,6 @@
 import { useState } from "react";
+import FootstepsOverlay from "../components/FootstepsOverlay";
+
 
 function MagicScroll({ title = "About Me", children }) {
   const [open, setOpen] = useState(false);
@@ -35,17 +37,19 @@ function MagicScroll({ title = "About Me", children }) {
           role="region"
           aria-label="Magic parchment"
         >
-
           {/* תוכן המגילה */}
-          <div className="px-6 md:px-10 py-5 md:py-8 text-stone-900 scroll-text">
+          <div className="relative px-6 md:px-10 py-5 md:py-8 text-stone-900 scroll-text">
             {children}
           </div>
         </div>
 
         <p className="mt-3 text-sm text-black-200/80 italic">
-          Click “Open” to unroll the parchment — like the Weasley twins would 
+          Click “Open” to unroll the parchment — like the Weasley twins would
         </p>
       </div>
+
+      {/* ✨ כאן מוסיפים את הטביעות – רק בעמוד הזה */}
+      <FootstepsOverlay />
     </div>
   );
 }

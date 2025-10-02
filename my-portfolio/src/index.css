@@ -89,3 +89,13 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,.35) inset, 0 2px 8px rgba(0,0,0,.35);
   border-radius: 999px;
 }
+
+/* טביעת רגל – רגל שמאל */
+.foot-l { 
+  background-image: url("/skills/footleft.png"); 
+}
+
+/* טביעת רגל – רגל ימין */
+.foot-r { 
+  background-image: url("/skills/footright.png"); 
+}

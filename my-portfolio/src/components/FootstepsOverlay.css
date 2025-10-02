@@ -1,0 +1,23 @@
+/* קטן ועדין יותר */
+.footstep{
+  position:absolute;
+  width:18px;              /* היה 40px */
+  height:28px;             /* היה 60px */
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  opacity:0;
+  transform:rotate(var(--r,0));
+  animation:appear-step 6s infinite;
+  animation-delay:var(--d,1s);
+  pointer-events:none;
+}
+
+.foot-l{ background-image:url("/skills/footleft.png"); }
+.foot-r{ background-image:url("/skills/footright.png"); }
+
+@keyframes appear-step{
+  0%,100%{ opacity:0; transform:scale(.96) translateY(2px); }
+  15%,40%{ opacity:.9; transform:scale(1) translateY(0); }
+  60%,90%{ opacity:0; transform:scale(.98) translateY(-2px); }
+}
