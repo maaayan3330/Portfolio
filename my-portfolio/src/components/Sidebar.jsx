@@ -16,6 +16,7 @@ function Sidebar() {
       <NavLink to="/about" className={linkClasses}>About</NavLink>
       <NavLink to="/projects" className={linkClasses}>Projects</NavLink>
       <NavLink to="/skills" className={linkClasses}>Skills</NavLink>
+      <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
 
     </div>
 
