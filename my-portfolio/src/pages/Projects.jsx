@@ -41,7 +41,7 @@ const PROJECTS = [
   },
   { id: "YouTube Web Server", title: "YouTube Web Server", subtitle: "JavaScript",
     description: "Built the backend for a YouTube-style platform as part of a 3-person team. Developed using Node.js, Express, and MongoDB in an MVC architecture, with modular controllers for videos, users, and comments. Handled video uploads, user management, and comment routing, ensuring scalability and clear separation of logic. The server connects directly to the React-based web app and Android client for real-time data synchronization.",
-    tech: ["Node.js", "MongoDB", "React", "MVC", "JavaScript", "REST API", "Team Project"] ,
+    tech: ["Node.js", "MongoDB",  "MVC", "JavaScript", "REST API", "Team Project"] ,
     github: "https://github.com/maaayan3330/YouTube---server.git"
   },
 ];
