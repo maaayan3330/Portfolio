@@ -9,21 +9,41 @@ const PROJECTS = [
     tech: ["OOP", "Java"],
     github: "https://github.com/maaayan3330/Arkanoid-Project.git"
   },
-  { id: "React YouTube Website", title: "YouTube Website", subtitle: "React",
-    description: "Developed as part of a full project combining a web app and an Android client with a shared Node.js server. This part focuses on the React-based website, built with HTML, CSS, Node.js, and React, featuring token-based authentication, video upload, and video playback pages. The project emphasized frontend–backend integration, secure user sessions, and a responsive UI for seamless viewing.",
-    tech: ["Node.js", "Express", "React", "CSS", "HTML"] },
-  { id: "soap-sim", title: "Soap Production Line Simulation", subtitle: "Arena + QC",
-    description: "Discrete-event simulation of a full line: filling, drying, QC sampling (0.9 prob), defect detection, bottleneck analysis, and KPI dashboards.",
-    tech: ["Arena", "Excel", "Statistics", "QC (Cp/Cpk)", "VSM"] },
-  { id: "pressure-mdp", title: "Pressure Plate MDP Controller", subtitle: "AI Planning",
-    description: "Hybrid A* compass with limited-depth value iteration for a stochastic grid world. Robust rerouting to nearest path node with corner-avoidance.",
-    tech: ["Python", "MDP", "A*", "Value Iteration", "Heuristics"] },
-  { id: "portfolio", title: "Personal Portfolio", subtitle: "React + Tailwind",
-    description: "Harry Potter themed micro-interactions (Marauder's Map, parchment UI). Clean components, routing, and responsive layouts.",
-    tech: ["React", "Vite", "Tailwind", "Framer Motion"] },
-  { id: "wolt-marketing", title: "Wolt Israel – Marketing Analysis", subtitle: "Course Project",
-    description: "Comprehensive market mapping: Porter, segmentation, USP, and ops insights. Deliverables include slides, dashboards, and a written report.",
-    tech: ["Marketing", "Research", "Slides", "Excel", "Storytelling"] },
+  { id: "Sokoban 1 AI", title: "Sokoban 1 AI", subtitle: "Python",
+    description: "Developed intelligent agent to solve the Sokoban: puzzle a pressure-plate game requiring door/key logic and spatial reasoning. Implemented A* and Greedy Best-First Search (GBFS) with a custom heuristic combining Manhattan distance and door penalties. Demonstrated strong understanding of state-space search, heuristic design, and goal-oriented planning.",
+    tech: ["Python", "A* Search", "Heuristic Functions", "Path Planning", "GBFS"],
+    github: "https://github.com/maaayan3330/AI_exe1.git"
+  },
+  { id: "Sokoban 2 AI", title: "Sokoban 2 AI", subtitle: "Python",
+    description: "A direct continuation of the KobanGan (Assignment 1) puzzle, this project extended the deterministic environment into a stochastic grid world. Implemented an intelligent controller based on Markov Decision Processes (MDP) and Value Iteration, using rewards and transition probabilities. Integrated the deterministic A* path as a guiding heuristic for optimal policy learning under uncertainty.",
+    tech: ["Python", "MDP", "Value Iteration", "A* Guidance", "Stochastic AI"],
+    github: "https://github.com/maaayan3330/AI2.git"
+  },
+  { id: "Seminar on distributed algorithms", title: "Seminar", subtitle: "distributed algorithms - PN Models",
+    description: "A seminar exploring distributed computation through Port-Numbered (PN) networks. Implemented and analyzed distributed algorithms such as: 3-coloring in path graphs, using local state machines and synchronous message passing. Maximal matching in bipartite graphs, with formal runtime and correctness proofs. The project emphasized understanding communication rounds, state transitions, and local decision-making in distributed systems.",
+    tech: ["Distributed Systems", "PN Model", "Graph Algorithms", "Synchrony"],
+    github: "https://github.com/maaayan3330/Seminar-on-distributed-algorithms.git"
+  },
+  { id: "portfolio", title: "Personal Portfolio", subtitle: "React",
+    description: "Designed and developed a Harry Potter inspired personal portfolio website with rich micro-interactions and magical aesthetics. Built using React, Vite, and Tailwind CSS, featuring interactive “Chocolate Frog” project cards, and smooth animations powered by Framer Motion. The project demonstrates strong frontend architecture, UI/UX design, and creative component logic.",
+    tech: ["React", "Vite", "Tailwind", "Framer Motion", "UX Design", "Animation"],
+    github: "https://github.com/maaayan3330/Portfolio.git"
+  },
+  { id: "YouTube Mobile App", title: "YouTube Mobile App", subtitle: "Android Studio",
+    description: "Developed a YouTube-style Android application as part of a team of three, within a complete client–server system that also included a React-based web platform. The app allows video upload and playback, connecting directly to a Node.js server with a MongoDB database where all user data and media are stored. Focused on building a smooth, modern interface and ensuring full synchronization between the mobile app and the website.",
+    tech: ["Java", "Android Studio", "Room"], 
+    github: "https://github.com/maaayan3330/Project-YouTube-Android.git"
+  },
+  { id: "YouTube Web Platform", title: "YouTube Web Platform", subtitle: "React",
+    description: "Developed a YouTube-style web platform using React, as part of a team of three, alongside the Android app and shared backend server. Implemented video upload, playback, and user authentication through a Node.js + MongoDB REST API, where all videos and user data are securely stored. Designed a clean and responsive interface with HTML, CSS, and React components, ensuring smooth integration with the Android version.",
+    tech: ["Node.js", "Express", "React", "CSS", "HTML", "REST API"] ,
+    github: "https://github.com/maaayan3330/YouTube-web.git"
+  },
+  { id: "YouTube Web Server", title: "YouTube Web Server", subtitle: "JavaScript",
+    description: "Built the backend for a YouTube-style platform as part of a 3-person team. Developed using Node.js, Express, and MongoDB in an MVC architecture, with modular controllers for videos, users, and comments. Handled video uploads, user management, and comment routing, ensuring scalability and clear separation of logic. The server connects directly to the React-based web app and Android client for real-time data synchronization.",
+    tech: ["Node.js", "MongoDB", "React", "MVC", "JavaScript", "REST API", "Team Project"] ,
+    github: "https://github.com/maaayan3330/YouTube---server.git"
+  },
 ];
 
 function ChocolateFrogCard({ project, onFocus, isOpen }) {
@@ -125,7 +145,7 @@ function FocusedFrog({ project, onClose }) {
                   <img src={FROG_IMG} alt="" className="w-24 drop-shadow-lg opacity-80" />
                   <h3 className="font-harry text-5xl text-yellow-300 mt-3">{project.title}</h3>
                   <p className="text-yellow-100/70 text-sm mt-1">{project.subtitle}</p>
-                  <p className="text-yellow-100/80 text-base mt-5">Click to flip ✨</p>
+                  <p className="text-yellow-100/80 text-base mt-5">Click to flip </p>
                 </div>
 
                 {/* BACK – מתחיל מחומש ואז מתרחב למלבן עם פינות מעוגלות */}
@@ -188,15 +208,6 @@ function FocusedFrog({ project, onClose }) {
                       </button>
                     </div>
                   </div>
-
-                  {/* ✕ בפינה */}
-                  <button
-                    onClick={handleClose}
-                    className="absolute -top-4 -right-4 rounded-full w-10 h-10 grid place-items-center bg-yellow-500/25 ring-2 ring-yellow-300/70 text-yellow-50 hover:bg-yellow-500/35 transition"
-                    aria-label="Close"
-                  >
-                    ✕
-                  </button>
                 </div>
               </motion.div>
             </motion.div>
@@ -216,8 +227,8 @@ export default function ProjectsChocolateFrogs() {
     <main className="min-h-[100dvh] bg-[#f5f5f5] text-zinc-800 px-6 py-4">
       <div className="mx-auto max-w-6xl">
         <header className="text-center mb-2">
-          <h1 className="font-harry text-3xl md:text-4xl text-yellow-600 drop-shadow-[0_0_10px_rgba(255,215,0,0.35)]">Projects</h1>
-          <p className="mt-1 text-zinc-600 text-xs md:text-sm">Hover a Chocolate Frog card to enlarge, center, and flip for details ✨</p>
+          <h1 className="font-harry text-4xl md:text-5xl text-yellow-500 drop-shadow-[0_0_10px_rgba(255,215,0,0.35)]">Projects</h1>
+          <p className="mt-1 text-yellow-500 text-xs md:text-sm">Click on a Chocolate Frog card  for details 🪄</p>
         </header>
 
         <section className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3 place-items-center">
