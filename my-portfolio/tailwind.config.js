@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        harry: ["HarryP", "serif"], // תמיד להוסיף fallback
+        harry: ["HarryP", "serif"], 
       },
     },
   },

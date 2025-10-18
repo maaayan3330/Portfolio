@@ -33,22 +33,18 @@ function Skills() {
       </style>
 
       <section className="h-full flex flex-col">
-        {/* כותרת עם הכובע בלבד */}
         <header className="shrink-0 h-28 flex items-center justify-center gap-6">
-          {/* המצנפת */}
           <img
             src="/skills/hat.jpg"
             alt="Sorting Hat"
             className="w-14 h-14 object-contain animate-bounce-slow"
           />
 
-          {/* הכותרת */}
           <h1 className="font-harry text-6xl text-yellow-400 leading-none drop-shadow-[0_0_8px_rgba(255,215,0,0.35)]">
             My Skills
           </h1>
         </header>
 
-        {/* הגריד של הסקילים */}
         <div className="grow grid grid-cols-4 grid-rows-3 place-items-center gap-x-8 gap-y-4 overflow-hidden">
           {skills.map((s) => (
             <div key={s.name} className="flex items-center justify-center">

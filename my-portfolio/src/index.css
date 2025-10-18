@@ -1,15 +1,14 @@
 @import "tailwindcss";
 
-/* רישום קובץ הפונט – נשאר כמו שיש לך */
+
 @font-face {
   font-family: "HarryP";
-  src: url("/fonts/harryp.ttf") format("truetype"); /* public/fonts/harryp.ttf */
+  src: url("/fonts/harryp.ttf") format("truetype"); 
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* הגדרה ל-Tailwind v4 כדי ש- font-harry יעבוד */
 @theme {
   --font-harry: "HarryP", serif;
 }
@@ -20,10 +19,9 @@ body {
 
 @layer base {
   html, body, #root { height: 100dvh; overflow: hidden; }
-  body { margin: 0; } /* מבטל מרווח ברירת־מחדל שיוצר פס גלילה */
+  body { margin: 0; } 
 }
 
-/* ===== אנימציות כלליות ===== */
 @keyframes float-soft {
   0%   { transform: translateY(0) }
   50%  { transform: translateY(-4px) }
@@ -50,7 +48,6 @@ body {
 }
 .sparkle { animation: sparkle 3s ease-in-out infinite; }
 
-/* אנימציית הסניץ */
 @keyframes snitch-rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 @keyframes snitch-hover {
   0% { transform: translateY(0px); }
@@ -60,22 +57,20 @@ body {
   100% { transform: translateY(0px); }
 }
 
-/* ===== קלף ריאליסטי (זה מה שאת משתמשת בו) ===== */
-/* שינוי: משתמשים ב-/skills/parchment.jpg, בלי שכבת noise */
+
 .parchment-real {
   position: relative;
   background:
-    url("/skills/parchment.jpg") center/cover no-repeat, /* <<< כאן השינוי לנתיב */
-    linear-gradient(180deg, rgba(252,241,205,0.9), rgba(235,214,170,0.9)); /* גיבוי אם אין תמונה */
+    url("/skills/parchment.jpg") center/cover no-repeat, 
+    linear-gradient(180deg, rgba(252,241,205,0.9), rgba(235,214,170,0.9)); 
   border-radius: 18px;
   box-shadow:
-    0 18px 40px rgba(0,0,0,0.25),       /* צל חיצוני */
-    inset 0 0 40px rgba(0,0,0,0.18),    /* צל פנימי */
-    inset 0 0 140px rgba(129, 94, 38, 0.25); /* כהות בקצוות */
+    0 18px 40px rgba(0,0,0,0.25),      
+    inset 0 0 40px rgba(0,0,0,0.18),    
+    inset 0 0 140px rgba(129, 94, 38, 0.25); 
 }
 
 
-/* אנימציית פתיחה ריאליסטית */
 @keyframes unroll-real {
   0%   { transform: translateY(-6px) scaleY(0.96); filter: blur(2px); opacity:.85;}
   60%  { transform: translateY(0)    scaleY(1.02); filter: blur(.4px); opacity:1;}
@@ -83,19 +78,19 @@ body {
 }
 .animate-unroll-real { animation: unroll-real .7s ease-out; }
 
-/* פסי “מקל” עץ למעלה/למטה */
+
 .scroll-rod {
   background: linear-gradient(90deg,#5c3a1a 0%, #8b5a2b 50%, #5c3a1a 100%);
   box-shadow: 0 2px 6px rgba(0,0,0,.35) inset, 0 2px 8px rgba(0,0,0,.35);
   border-radius: 999px;
 }
 
-/* טביעת רגל – רגל שמאל */
+
 .foot-l { 
   background-image: url("/skills/footleft.png"); 
 }
 
-/* טביעת רגל – רגל ימין */
+
 .foot-r { 
   background-image: url("/skills/footright.png"); 
 }

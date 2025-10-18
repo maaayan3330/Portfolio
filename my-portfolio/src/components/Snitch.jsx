@@ -19,7 +19,6 @@ function Snitch() {
         newY = pos.y - Math.sin(angle) * 100;
       }
 
-      // שמירה על גבולות המסך
       const maxX = window.innerWidth - 80;
       const maxY = window.innerHeight - 80;
 

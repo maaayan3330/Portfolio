@@ -8,12 +8,10 @@ function MagicScroll({ children }) {
     <div className="min-h-[calc(100dvh-0px)] flex items-start md:items-center justify-center px-6 py-8">
       <div className="w-full max-w-4xl text-center">
         
-        {/* ✨ כותרת קסם */}
         <h1 className="font-harry text-4xl text-yellow-400 mb-6 drop-shadow-[0_0_8px_rgba(255,215,0,0.5)]">
           {open ? "Mischief Managed." : "I solemnly swear that I am up to no good."}
         </h1>
 
-        {/* מגילה */}
         <div
           id="scroll-panel"
           className={`
@@ -27,7 +25,6 @@ function MagicScroll({ children }) {
           role="region"
           aria-label="Magic parchment"
         >
-          {/* תוכן המגילה */}
           {open && (
             <div className="relative px-6 md:px-10 py-5 md:py-8 text-stone-900 scroll-text text-left">
               <ul className="list-disc list-inside space-y-3 text-lg leading-relaxed">
@@ -51,7 +48,6 @@ function MagicScroll({ children }) {
           )}
         </div>
 
-        {/* כפתור פתיחה/סגירה */}
         <button
           onClick={() => setOpen((v) => !v)}
           className="mt-6 rounded-xl px-6 py-2 bg-yellow-500/20 text-black-300 hover:bg-yellow-500/30 transition"
@@ -60,7 +56,6 @@ function MagicScroll({ children }) {
         </button>
       </div>
 
-      {/* ✨ טביעות רגליים רק כאן */}
       <FootstepsOverlay />
     </div>
   );

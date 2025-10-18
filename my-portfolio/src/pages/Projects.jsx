@@ -71,7 +71,7 @@ function ChocolateFrogCard({ project, onFocus, isOpen }) {
 /* ==== UPDATED: FocusedFrog – expands to rectangle when open ==== */
 function FocusedFrog({ project, onClose }) {
   const [flipped, setFlipped] = useState(false);
-  const [expanded, setExpanded] = useState(false); // ← מצב “התרחבות” למלבן
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     function onKey(e) { if (e.key === "Escape") handleClose(); }
@@ -79,12 +79,12 @@ function FocusedFrog({ project, onClose }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [project]);
 
-  // כשנפתח – מתחילים כהצגת מחומש ואז מרחיבים למלבן חלק
+
   useEffect(() => {
     if (project) {
       setFlipped(false);
       setExpanded(false);
-      const t = setTimeout(() => setExpanded(true), 120); // דיליי קצר לאנימציה נעימה
+      const t = setTimeout(() => setExpanded(true), 120);
       return () => clearTimeout(t);
     } else {
       setExpanded(false);
@@ -109,7 +109,6 @@ function FocusedFrog({ project, onClose }) {
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-50"
         >
-          {/* רקע – סוגר את המודאל */}
           <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" onClick={handleClose} />
 
           <div className="absolute inset-0 grid place-items-center">
@@ -120,7 +119,6 @@ function FocusedFrog({ project, onClose }) {
               transition={{ type: "spring", stiffness: 200, damping: 22 }}
               className="[perspective:2000px]"
             >
-              {/* אפשר להרחיב גם את הגודל כשהוא expanded */}
               <motion.div
                 className="relative"
                 style={{ transformStyle: "preserve-3d" }}
@@ -131,7 +129,7 @@ function FocusedFrog({ project, onClose }) {
                 }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
               >
-                {/* FRONT – מחומש, לוחצים כדי להתהפך */}
+
                 <div
                   onClick={() => setFlipped(true)}
                   className="absolute inset-0 flex flex-col items-center justify-center text-yellow-200 cursor-pointer select-none"
@@ -148,12 +146,11 @@ function FocusedFrog({ project, onClose }) {
                   <p className="text-yellow-100/80 text-base mt-5">Click to flip </p>
                 </div>
 
-                {/* BACK – מתחיל מחומש ואז מתרחב למלבן עם פינות מעוגלות */}
                 <div
                   className="absolute inset-0 text-yellow-100"
                   style={{
-                    clipPath: expanded ? "none" : PENTAGON,       // ← הופך למלבן
-                    borderRadius: expanded ? "20px" : "0px",       // ← פינות מעוגלות
+                    clipPath: expanded ? "none" : PENTAGON,     
+                    borderRadius: expanded ? "20px" : "0px",    
                     background: "linear-gradient(180deg,#0f0b2e 0%,#1b1360 55%,#2a1778 100%)",
                     boxShadow: "0 18px 48px rgba(0,0,0,.45), inset 0 0 0 10px #d2a43b, inset 0 0 0 16px #6b4ca6",
                     transform: "rotateY(180deg)",
@@ -161,7 +158,7 @@ function FocusedFrog({ project, onClose }) {
                     transition: "clip-path 0.6s ease-in-out, border-radius 0.6s ease-in-out",
                   }}
                 >
-                  {/* מרווחים נדיבים – מלבן מאפשר טקסט נוח */}
+
                   <div className="absolute inset-0 overflow-auto px-8 md:px-10 py-8">
                     <div className="max-w-[60ch] mx-auto text-center">
                       <h3 className="font-harry text-3xl md:text-4xl text-yellow-300 drop-shadow-sm leading-tight">
@@ -175,7 +172,6 @@ function FocusedFrog({ project, onClose }) {
                         {project.description}
                       </p>
 
-                      {/* לינק פשוט ל-GitHub */}
                       {project.github && (
                         <p className="mt-3 text-sm">
                           <a

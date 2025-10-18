@@ -1,8 +1,7 @@
-/* קטן ועדין יותר */
 .footstep{
   position:absolute;
-  width:18px;              /* היה 40px */
-  height:28px;             /* היה 60px */
+  width:18px;             
+  height:28px;           
   background-size:contain;
   background-repeat:no-repeat;
   background-position:center;
