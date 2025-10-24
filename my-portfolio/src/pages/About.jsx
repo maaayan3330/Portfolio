@@ -38,7 +38,7 @@ function MagicScroll({ children }) {
                   I am always eager to learn new things, grow, and give my best to ensure outstanding results.
                 </li>
                 <li>
-                  I am looking for my first position in the development world — since all the jobs at Hogwarts were already taken!
+                  I am looking for my first position in the development world - since all the jobs at Hogwarts were already taken!
                 </li>
                 <li>
                   All the projects I’ve worked on and my skills are detailed on this site.
