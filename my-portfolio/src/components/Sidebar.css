@@ -13,3 +13,8 @@
     0% 0%
   );
 }
+@media (max-width: 768px) {
+  .sidebar-zigzag {
+    clip-path: none;
+  }
+}

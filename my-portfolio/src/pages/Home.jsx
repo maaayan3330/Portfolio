@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-[100dvh] bg-[#f5f5f5] text-zinc-900 flex items-center justify-center -mt-20">
+    <main className="min-h-[100dvh] bg-[#f5f5f5] text-zinc-900 flex items-center justify-center md:-mt-20">
       <section className="max-w-4xl mx-auto px-6 text-center">
         <h1 className="font-harry text-8xl text-yellow-500 drop-shadow-[0_0_10px_rgba(255,215,0,0.5)] mb-6">
           Welcome
