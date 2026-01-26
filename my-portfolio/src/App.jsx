@@ -11,7 +11,6 @@ function App() {
       
       <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-      {/* אזור שגולל */}
       <div className="flex-1 p-4 md:p-10 text-gray-800 overflow-y-auto">
         <button
           className="md:hidden mb-4 text-2xl"

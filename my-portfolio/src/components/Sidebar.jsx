@@ -12,7 +12,7 @@ function Sidebar({ menuOpen, setMenuOpen }) {
 
   return (
     <>
-      {/* Overlay במובייל */}
+
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-40 md:hidden"
@@ -30,7 +30,6 @@ function Sidebar({ menuOpen, setMenuOpen }) {
           md:translate-x-0
         `}
       >
-        {/* כפתור סגירה במובייל */}
         <button
           className="absolute top-4 right-4 text-yellow-400 text-2xl md:hidden"
           onClick={() => setMenuOpen(false)}
@@ -44,7 +43,6 @@ function Sidebar({ menuOpen, setMenuOpen }) {
         <NavLink to="/skills" className={linkClasses} onClick={() => setMenuOpen(false)}>Skills</NavLink>
         <NavLink to="/contact" className={linkClasses} onClick={() => setMenuOpen(false)}>Contact</NavLink>
 
-        {/* zigzag נשאר */}
         <div className="zigzag-border hidden md:block"></div>
       </div>
     </>
