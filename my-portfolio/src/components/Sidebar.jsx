@@ -10,7 +10,6 @@ function Sidebar() {
 
   return (
     <div className="relative flex">
-      {/* ה־Sidebar עם החיתוך */}
       <div className="sidebar-zigzag h-screen w-64 bg-black/90 backdrop-blur-md flex flex-col items-center justify-center gap-10 shadow-2xl">
       <NavLink to="/" className={linkClasses}>Home</NavLink>
       <NavLink to="/about" className={linkClasses}>About</NavLink>
