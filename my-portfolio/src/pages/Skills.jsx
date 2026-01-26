@@ -1,63 +1,107 @@
+import { useState } from "react";
+
 function Skills() {
-  const skills = [
-    { name: "C",         img: "/skills/c.webp" },
-    { name: "Python",    img: "/skills/python.png" },
-    { name: "Java",      img: "/skills/java.png" },
-    { name: "OOP",       img: "/skills/OOP.png" },
-    { name: "Git",       img: "/skills/git.png" },
-    { name: "Jira",      img: "/skills/jira.png" },
-    { name: "MongoDB",   img: "/skills/mongo.png" },
-    { name: "Node.js",   img: "/skills/node.webp" },
-    { name: "Android",   img: "/skills/android.png" },
-    { name: "React",     img: "/skills/react.png" },
+  const skillGroups = [
+    {
+      title: "Core Programming",
+      skills: [
+        "C",
+        "Java",
+        "Python",
+        "Object-Oriented Programming (OOP)",
+      ],
+    },
+    {
+      title: "Backend / Full Stack",
+      skills: [
+        "Node.js",
+        "React",
+        "MongoDB",
+        "MySQL",
+      ],
+    },
+    {
+      title: "Computer Science Fundamentals",
+      skills: [
+        "Communication Networks (protocols, layers)",
+        "Data Structures",
+        "Algorithms",
+      ],
+    },
+    {
+      title: "Tools & Platforms",
+      skills: [
+        "Git",
+        "Jira",
+        "Android Studio",
+      ],
+    },
   ];
 
+  const [openIndex, setOpenIndex] = useState(null);
+
   return (
-    <main className="h-full overflow-hidden text-white">
-      <style>
-        {`
-          @keyframes sparkle {
-            0%, 100% {
-              filter: drop-shadow(0 0 0 rgba(255, 215, 0, 0));
-              transform: scale(1);
-            }
-            50% {
-              filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
-              transform: scale(1.08);
-            }
-          }
-          .sparkle {
-            animation: sparkle 3s ease-in-out infinite;
-          }
-        `}
-      </style>
+    <main className="min-h-screen bg-[#f5f5f5] px-6 py-16 pb-24 text-zinc-900">
+      
+      {/* Header */}
+      <header className="flex items-center justify-center gap-4 mb-14 whitespace-nowrap">
+        <img
+          src="/skills/hat.jpg"
+          alt="Sorting Hat"
+          className="w-12 h-12"
+        />
+        <h1 className="font-harry text-5xl text-yellow-500 drop-shadow-[0_0_10px_rgba(255,215,0,0.4)]">
+          My Skills
+        </h1>
+      </header>
 
-      <section className="h-full flex flex-col">
-        <header className="shrink-0 h-28 flex items-center justify-center gap-6">
-          <img
-            src="/skills/hat.jpg"
-            alt="Sorting Hat"
-            className="w-14 h-14 object-contain animate-bounce-slow"
-          />
+      {/* Accordion */}
+      <section className="max-w-3xl mx-auto space-y-6">
+        {skillGroups.map((group, index) => {
+          const isOpen = openIndex === index;
 
-          <h1 className="font-harry text-6xl text-yellow-400 leading-none drop-shadow-[0_0_8px_rgba(255,215,0,0.35)]">
-            My Skills
-          </h1>
-        </header>
+          return (
+            <div
+              key={group.title}
+              className="bg-yellow-50/70 border border-yellow-200 rounded-xl shadow-md transition hover:shadow-lg"
+            >
+              {/* Section Header */}
+              <button
+                onClick={() => setOpenIndex(isOpen ? null : index)}
+                className="w-full flex items-center justify-between px-6 py-5
+                           text-left text-lg font-semibold text-zinc-900
+                           hover:bg-yellow-100/50 transition"
+              >
+                <span>{group.title}</span>
+                <span className="text-xl">
+                  {isOpen ? "▾" : "▸"}
+                </span>
+              </button>
 
-        <div className="grow grid grid-cols-4 grid-rows-3 place-items-center gap-x-8 gap-y-4 overflow-hidden">
-          {skills.map((s) => (
-            <div key={s.name} className="flex items-center justify-center">
-              <img
-                src={s.img}
-                alt={s.name}
-                className="[width:clamp(56px,7.5vw,90px)] [height:clamp(56px,7.5vw,90px)] 
-                           object-contain select-none sparkle"
-                draggable="false"
-              />
+              {/* Content */}
+              {isOpen && (
+                <div className="px-8 pb-6">
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                    {group.skills.map((skill) => (
+                      <li
+                        key={skill}
+                        className="flex items-start gap-3 text-zinc-800"
+                      >
+                                              <img
+                        src="/snitchpng.png"
+                        alt=""
+                        className="w-4 h-4 mt-1 opacity-80"
+                      />
+
+                        <span className="font-medium">{skill}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
-          ))}
-        </div>
+          );
+        })}
       </section>
     </main>
   );
