@@ -1,19 +1,66 @@
-# My Portfolio
-Welcome to my personal Portfolio Website!
-This project is built with React + Vite + TailwindCSS, and it’s a space where I showcase my journey as a Computer Science student and aspiring Software Engineer.
+# 🌐 My Portfolio
 
-🚀 Features:
+<p align="center">
+  <b>Personal Portfolio Website</b><br/>
+  Showcasing my journey as a Computer Science student & aspiring Software Engineer ✨
+</p>
 
-✨ Modern and responsive design
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue" />
+  <img src="https://img.shields.io/badge/React-Vite-61dafb" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38bdf8" />
+  <img src="https://img.shields.io/badge/Deployed-Vercel-black" />
+</p>
 
-📂 Projects section with live demos and GitHub links
+---
 
-📜 About me page with skills and background
+## ✨ About The Project
 
-📞 Contact section with links to LinkedIn, GitHub, and email
+This repository contains the source code for my **personal portfolio website**, built to present my background, projects, and technical skills in a clean, modern, and user-friendly way.
 
-🎨 Fun interactive elements (because coding should be fun!)
+The portfolio reflects both my **technical abilities** and my **design-oriented mindset**, combining performance, responsiveness, and a pleasant user experience.
 
-🌱 Future Plans:
+---
 
-Add more projects as I keep building cool stuff
+## 🚀 Live Demo
+
+🔗 **Website:**  
+https://your-portfolio-link.vercel.app  
+
+---
+
+## 🧰 Tech Stack
+
+- ⚛️ **React** (with Vite)
+- 🎨 **Tailwind CSS**
+- 🧠 **JavaScript (ES6+)**
+- 🌐 **HTML5 & CSS3**
+- ☁️ **Vercel** (deployment)
+
+---
+
+## ✨ Features
+
+- 📱 Fully responsive design (mobile-first)
+- 🧭 Clean and intuitive navigation
+- 🗂️ Projects section with GitHub & live demo links
+- 👩‍💻 About Me section with skills and background
+- 📬 Contact section (LinkedIn, GitHub, Email)
+- 🎯 Interactive UI elements for better user experience
+
+---
+
+## 📁 Project Structure
+
+```bash
+my-portfolio/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── App.jsx
+│
+├── public/
+├── package.json
+└── README.md
