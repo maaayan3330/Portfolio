@@ -1,4 +1,4 @@
-# 🌐 My Portfolio
+# My Portfolio
 
 <p align="center">
   <b>Personal Portfolio Website</b><br/>
@@ -48,19 +48,4 @@ https://your-portfolio-link.vercel.app
 - 📬 Contact section (LinkedIn, GitHub, Email)
 - 🎯 Interactive UI elements for better user experience
 
----
 
-## 📁 Project Structure
-
-```bash
-my-portfolio/
-│
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── App.jsx
-│
-├── public/
-├── package.json
-└── README.md
