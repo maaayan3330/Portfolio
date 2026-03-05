@@ -29,13 +29,12 @@ The portfolio reflects both my **technical abilities** and my **design-oriented 
 
 ## 🧰 Tech Stack
 
-- ⚛️\ **React** (with Vite)
+-  **React** 
 -  **Tailwind CSS**
--  **JavaScript (ES6+)**
+-  **JavaScript**
 -  **HTML5 & CSS3**
--  **Vercel** (deployment)
+-  **Vercel** 
 
----
 
 ## ✨ Features
 
