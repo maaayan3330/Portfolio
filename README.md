@@ -13,30 +13,27 @@
 </p>
 
 
-## ✨ About The Project
+## About The Project
 
 This repository contains the source code for my **personal portfolio website**, built to present my background, projects, and technical skills in a clean, modern, and user-friendly way.
 
 The portfolio reflects both my **technical abilities** and my **design-oriented mindset**, combining performance, responsiveness, and a pleasant user experience.
 
 
-## 🚀 Live Demo
-
-🔗 **Website:**  
-[[https://your-portfolio-link.vercel.app  
-](https://portfolio-maayan-ifergan.vercel.app/)](https://portfolio-maayan-ifergan.vercel.app/)
+##  Live Demo
+https://portfolio-maayan-ifergan.vercel.app
 
 
-## 🧰 Tech Stack
+##  Tech Stack
 
--  **React** 
--  **Tailwind CSS**
--  **JavaScript**
--  **HTML5 & CSS3**
--  **Vercel** 
+-  React 
+-  Tailwind CSS
+-  JavaScript
+-  HTML5 & CSS3
+-  Vercel
 
 
-## ✨ Features
+##  Features
 
 -  Fully responsive design (mobile-first)
 -  Clean and intuitive navigation
