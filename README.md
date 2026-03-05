@@ -12,7 +12,6 @@
   <img src="https://img.shields.io/badge/Deployed-Vercel-black" />
 </p>
 
----
 
 ## ✨ About The Project
 
@@ -20,32 +19,31 @@ This repository contains the source code for my **personal portfolio website**, 
 
 The portfolio reflects both my **technical abilities** and my **design-oriented mindset**, combining performance, responsiveness, and a pleasant user experience.
 
----
 
 ## 🚀 Live Demo
 
 🔗 **Website:**  
-[https://your-portfolio-link.vercel.app  
-](https://portfolio-maayan-ifergan.vercel.app/)
----
+[[https://your-portfolio-link.vercel.app  
+](https://portfolio-maayan-ifergan.vercel.app/)](https://portfolio-maayan-ifergan.vercel.app/)
+
 
 ## 🧰 Tech Stack
 
-- ⚛️ **React** (with Vite)
-- 🎨 **Tailwind CSS**
-- 🧠 **JavaScript (ES6+)**
-- 🌐 **HTML5 & CSS3**
-- ☁️ **Vercel** (deployment)
+- ⚛️\ **React** (with Vite)
+-  **Tailwind CSS**
+-  **JavaScript (ES6+)**
+-  **HTML5 & CSS3**
+-  **Vercel** (deployment)
 
 ---
 
 ## ✨ Features
 
-- 📱 Fully responsive design (mobile-first)
-- 🧭 Clean and intuitive navigation
-- 🗂️ Projects section with GitHub & live demo links
-- 👩‍💻 About Me section with skills and background
-- 📬 Contact section (LinkedIn, GitHub, Email)
-- 🎯 Interactive UI elements for better user experience
+-  Fully responsive design (mobile-first)
+-  Clean and intuitive navigation
+-  Projects section with GitHub & live demo links
+-  About Me section with skills and background
+-  Contact section (LinkedIn, GitHub, Email)
+-  Interactive UI elements for better user experience
 
 
