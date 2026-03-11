@@ -5,9 +5,10 @@ function Skills() {
     {
       title: "Core Programming",
       skills: [
-        "C",
-        "Java",
+        "JavaScript",
         "Python",
+        "Java",
+        "C",
         "Object-Oriented Programming (OOP)",
       ],
     },
@@ -18,6 +19,8 @@ function Skills() {
         "React",
         "MongoDB",
         "MySQL",
+        "CSS",
+        "HTML",
       ],
     },
     {
