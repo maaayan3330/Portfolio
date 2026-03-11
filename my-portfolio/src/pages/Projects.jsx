@@ -7,7 +7,7 @@ const PROJECTS = [
     title: "YouTube Web Platform",
     subtitle: "React",
     category: "Fullstack & Backend",
-    image: "../public/youtubeWeb.png",
+    image: "/youtubeWeb.png",
     description:
       "Full YouTube-style web platform with authentication, video upload and playback.",
     tech: ["React","JavaScript", "Node.js", "REST API" , "JWT"],
@@ -19,7 +19,7 @@ const PROJECTS = [
     title: "YouTube Backend Server",
     subtitle: "Node.js",
     category: "Fullstack & Backend",
-    image: "../public/code.webp",
+    image: "/code.webp",
     description:
       "Node.js backend with Express and MongoDB using MVC architecture.",
     tech: ["Node.js", "MongoDB", "MVC"],
@@ -31,7 +31,7 @@ const PROJECTS = [
     title: "Memory Game – Brooklyn Nine-Nine Edition",
     subtitle: "React",
     category: "Fullstack & Backend",
-    image: "../public/memoryGame.png",
+    image: "/memoryGame.png",
     description:
       "Interactive memory card game built with React and Vite featuring card flip animations, move counter, and win detection.",
     tech: ["React", "JavaScript", "Vite"],
@@ -43,7 +43,7 @@ const PROJECTS = [
     title: "Tic-Tac-Toe – React Game",
     subtitle: "React",
     category: "Fullstack & Backend",
-    image: "../public/tictoc.png",
+    image: "/tictoc.png",
     description:
       "Interactive Tic-Tac-Toe game built with React and Vite. Includes dynamic board updates, player name editing, and automatic win or draw detection.",
     tech: ["React", "JavaScript", "Vite"],
@@ -56,7 +56,7 @@ const PROJECTS = [
     title: "Personal Portfolio",
     subtitle: "React",
     category: "Fullstack & Backend",
-    image: "../public/port.png",
+    image: "/port.png",
     description:
       "Harry Potter themed developer portfolio built with React, Tailwind and Framer Motion.",
     tech: ["React", "Tailwind", "Framer Motion"],
@@ -67,7 +67,7 @@ const PROJECTS = [
     title: "YouTube Mobile App",
     subtitle: "Android",
     category: "Mobile Development",
-    image: "../public/youtubemobile.png",
+    image: "/youtubemobile.png",
     description:
       "Android application allowing video upload and playback connected to a Node.js backend.",
     tech: ["Java", "Android Studio"],
@@ -79,7 +79,7 @@ const PROJECTS = [
     title: "Sokoban 1 AI",
     subtitle: "Python",
     category: "AI & Algorithms",
-    image: "../public/code.webp",
+    image: "/code.webp",
     description:
       "AI agent solving Sokoban puzzles using A* and Greedy Best-First Search with custom heuristics.",
     tech: ["Python", "A*", "GBFS", "Heuristics"],
@@ -91,7 +91,7 @@ const PROJECTS = [
     title: "Sokoban 2 AI",
     subtitle: "Python",
     category: "AI & Algorithms",
-    image: "../public/code.webp",
+    image: "/code.webp",
     description:
       "Extended Sokoban puzzle into a stochastic grid world using Markov Decision Processes and Value Iteration.",
     tech: ["Python", "MDP", "Value Iteration"],
@@ -103,7 +103,7 @@ const PROJECTS = [
     title: "Arkanoid Game",
     subtitle: "Java",
     category: "Java & OOP Projects",
-    image: "../public/ark.png",
+    image: "/ark.png",
     description:
       "Developed a full-featured Arkanoid-style game in Java using OOP principles and modular design.",
     tech: ["Java", "OOP"],
