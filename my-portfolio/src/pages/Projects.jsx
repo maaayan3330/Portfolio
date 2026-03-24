@@ -39,6 +39,18 @@ const PROJECTS = [
     demo: "https://memory-game-two-rosy.vercel.app/",
   },
   {
+  id: "WordScramble",
+  title: "Word Scramble Game",
+  subtitle: "React",
+  category: "Fullstack & Backend",
+  image: "/game_src.png",
+  description:
+    "Interactive word puzzle game built with React and Vite featuring random word generation, shuffled letters, hint system, smart input navigation, and win detection.",
+  tech: ["React", "JavaScript", "Vite", "Tailwind CSS"],
+  github: "https://github.com/maaayan3330/Word-Scramble.git",
+  demo: "https://word-scramble-orcin-eight.vercel.app/",
+},
+  {
     id: "TicTacToe",
     title: "Tic-Tac-Toe – React Game",
     subtitle: "React",
