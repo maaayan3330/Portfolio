@@ -43,7 +43,7 @@ const PROJECTS = [
   title: "Word Scramble Game",
   subtitle: "React",
   category: "Fullstack & Backend",
-  image: "/game_src.png",
+  image: "/game_scr.png",
   description:
     "Interactive word puzzle game built with React and Vite featuring random word generation, shuffled letters, hint system, smart input navigation, and win detection.",
   tech: ["React", "JavaScript", "Vite", "Tailwind CSS"],
