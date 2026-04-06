@@ -50,9 +50,21 @@ const PROJECTS = [
   github: "https://github.com/maaayan3330/Word-Scramble.git",
   demo: "https://word-scramble-orcin-eight.vercel.app/",
 },
+{
+  id: "PizzaGame",
+  title: "Grab the Pizza",
+  subtitle: "React",
+  category: "Fullstack & Backend",
+  image: "/pizza.png",
+  description:
+    "Fast-paced reaction game built with React and Vite. Players must quickly click on randomly appearing pizza boxes with dynamic scoring, timer control, and smooth game flow using hooks.",
+  tech: ["React", "JavaScript", "Vite", "Tailwind CSS"],
+  github: "https://github.com/maaayan3330/Pizza-Game.git",
+  demo: "https://grab-the-pizza.vercel.app/",
+},
   {
     id: "TicTacToe",
-    title: "Tic-Tac-Toe – React Game",
+    title: "Tic-Tac-Toe",
     subtitle: "React",
     category: "Fullstack & Backend",
     image: "/tictoc.png",
